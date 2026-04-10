@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+
+<link href = './mats_home.css' rel = 'stylesheet'>
+
+<link rel="icon" type="image/x-icon" href="./mats-assets/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: portrait)" href="./mats_mobile.css">
+
+<link rel="stylesheet" media="screen and (max-width: 1024px) and (orientation: landscape)" href="./mats_mobile_landscape.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body onload="myFunction()">
+
+
+
+
+
+<div id = "loader" class="purple-loader"></div>
+
+<div id = "page">
+
+
+
+<img src = "./mats-assets/sequinstar.png" class = "star">
+<img src = "./mats-assets/stars.png" class = "stars">
+
+<div class = "tamanotchi">
+<a href="https://tamanotchi.world/30505c" target = "_blank"><img src="https://tamanotchi.world/i2/30505" alt="It's tamaNOTchi! Click to feed!"></a>
+</div>
+
+<div class = "pagetitle">
+homepage
+</div>
+
+
+<div class = "navigation-bar">
+<div style = "width: 100%; height: 100%;">
+
+<nav class = "navlinks">
+<span class = "exploremywebsite">Explore my website:</span>
+<br><br>
+<a href = "./about.html" class = "nava">&#x2023; About Page</a>
+<br><br>
+<a href = "./pe.html" class = "nava">&#x2023; Past Episodes</a>
+<br><br>
+<a href = "./comingup.html" class = "nava">&#x2023; Hints + Inspo</a>
+</nav>
+
+</div>
+</div>
+
+<div class = "info-home-one"><i><b>media according to stas</b></i> is a podcast about the key takeaways, lessons, and perceptions from books, films, documentaries, exhibitions, and other artistic mediums.</div>
+
+<div class = "info-home-two">The go-to for curated, open-minded discussions on anything media-related that allows this expression to be appreciated and consumed.</div>
+
+<div class = "portraitblur">
+<img src = './mats-assets/stas.jpeg' alt = "A photo of Stas George, host of media according to stas" class = "stas-portrait">
+</div>
+
+<img src = "./mats-assets/bow.png" class = "bow">
+<img src = "./mats-assets/mats_bg_logo2.png" class = "mats-logo">
+<a href = "./past-episodes.html"><img src = "./mats-assets/doll_stas.png" class = "doll"></a>
+
+<iframe src="https://player.rss.com/media-according-to-stas/latest?theme=light&v=2" title="media according to stas" width="30%" height="190px" class = "pod" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="no"><a href="https://rss.com/podcasts/media-according-to-stas/">media according to stas </a></iframe>
+
+<div class = "bottombar"><b style = "font-weight: 400;">media according to stas</b> <div class = "turn"><b>&#x2058;</b></div><div style = "position: absolute; top: 11px; right: 9px; text-align: right;">&#x2197; listen above, on <u style = "text-decoration-style: dotted;">spotify</u>, or on <u style = "text-decoration-style: dotted;">apple podcasts</u></div></div>
+
+<a href = "https://www.instagram.com/mediaaccordingtostaspodcast?igsh=YTFiNGt3czByaGtr"><img src = "./mats-assets/mats-blinkie-1.gif" class = "blinkie"></a>
+
+<!--
+<div class = "bars2">
+<div class = "bar slide one"></div>
+<div class = "bar slide two"></div>
+<div class = "bar slide three"></div>
+<div class = "bar slide four"></div>
+<div class = "bar slide five"></div>
+</div>
+-->
+
+</div>
+
+
+<iframe src="https://leaflet.pub/8473702e-d89c-4726-9ff4-194938591480" title = "media according to stas" class = "notes-leaflet"></iframe>
+
+
+<svg height="0">
+
+<filter id = "purplefilter">
+
+<feColorMatrix values=".100 .300 .333 0 0,
+.249 .126 .330 0 0,
+.172 .634 .111 0 0,
+.000 .000 .000 1 0" />
+
+</filter>
+
+
+</svg>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("page").style.display = "block";
+}
+</script>
+
+</body>
+</html>

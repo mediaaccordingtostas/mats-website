@@ -1,0 +1,441 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+ scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+html {
+height: 210%;
+overflow-y: hidden;
+cursor: url('./mats-cursor.cur');
+background-image: url('./mats-assets/lilac3.png');
+background-size: contain;
+background-color: lavenderblush;
+overflow-y: scroll;
+}
+
+body {
+margin: 0 0;
+height: 100%;
+color: gainsboro;
+font-family: "Work Sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+text-align: left;
+cursor: url('./mats-cursor.cur'), auto;
+box-shadow: 0px 0px 30px inset lavender;
+background-color: rgba(230, 230, 250, 0.3);
+}
+
+@font-face {
+    font-family: "Neutronica";
+    src: 
+      url("./Neutronica/NEG_____.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    
+
+}
+
+@keyframes float {
+            0% {
+                transform: translateY(0);
+              
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+@keyframes little {
+  50% {font-size: 18px;}
+  100% {font-size: 16px;}
+}
+
+@keyframes slide {
+
+
+0% {opacity: 100%; transform: translateX(0%);}
+100% {filter: brightness(300%) grayscale(100%);}
+100% {filter: brightness(250%); opacity: 100%; transform: translateX(0%);}
+
+}
+
+@keyframes fadein {
+
+0% {opacity: 0%;}
+100% {opacity: 100%;}
+
+
+}
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+        
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+        
+    }
+}
+
+#page {
+display: none;
+
+
+}
+
+
+nav a {
+background-color: lavender;
+color: #42203D;
+}
+
+nav a:hover {
+background-color: lavender;
+color: #42203D;
+}
+
+nav a:visited {
+
+color: #42203D;
+background-color: lavender;
+
+}
+
+
+
+.tamanotchi {
+
+display: block;
+top: 41.5%;
+left: 66%;
+z-index: 5;
+
+}
+
+.bow {
+position: absolute;
+top: 35%;
+left: 3%;
+display: block;
+width: 150px;
+height: 200px;
+filter: grayscale(50%) brightness(120%);
+}
+
+
+.stars {
+position: absolute;
+width: 111px;
+height: 111px;
+left: 15.5%;
+top: 4.5%;
+z-index: 3;
+transform: rotate(50deg);
+filter: brightness(138%);
+}
+
+
+.topbar {
+display: block;
+padding: 11px;
+position: fixed;
+width: 100vw;
+height: 5%;
+top: 0%;
+left: 0%;
+border: 0.5px solid white;
+outline: 0.5px solid black;
+background-image: linear-gradient(whitesmoke, rgba(220, 220, 220, 0.5));
+box-shadow: 0px 0px 30px inset white;
+color: dimgray;
+z-index: 3;
+}
+
+.bottombar {
+display: none;
+padding: 3px;
+}
+
+.pagetitle {
+display: none;
+
+}
+
+.pod {
+position: absolute;
+top: 53%;
+right: 5%;
+width: 90%;
+height: 170px;
+opacity: 88%;
+border-radius: 10px;
+padding: 1%;
+border: 0.5px solid white;
+outline: 0.5px solid black;
+box-shadow: 0px 0px 30px inset #834b7c;
+z-index: 2;
+}
+
+.exploremywebsite {
+
+background-color: lavender; 
+color: #42203D;
+
+}
+
+.portraitblur {
+display: none;
+}
+
+.stas-portrait {
+
+display: none;
+}
+
+.mats-logo {
+position: absolute;
+width: 250px;
+height: 252px;
+right: 5%;
+top: 7%;
+filter: grayscale(22%);
+box-shadow: 2px 2px 4px dimgray;
+transform: rotate(2.5deg);
+
+}
+
+.doll {
+display: block;
+position: absolute;
+top: 10%;
+filter: grayscale(0%);
+
+}
+
+.info-home-one {
+position: absolute;
+top: 27%;
+left: 6%;
+height: 70vw;
+width: 70vw;
+border-radius: 1%;
+padding: 1%;
+border: 0.5px solid white;
+outline: 0.5px solid black;
+background-image: linear-gradient(lavender, thistle);
+box-shadow: 0px 0px 30px inset lavender;
+text-align: justify;
+color: #190019;
+font-weight: normal;
+border: 1px solid;
+
+}
+
+.info-home-two {
+display: none;
+}
+
+.navigation-bar {
+
+position: absolute;
+display: none;
+left: -10%;
+top: 10%;
+width: 300px;
+height: 450px;
+background-image: none;
+background-size: cover;
+font-family: 'Work Sans';
+animation-delay: 0s;
+opacity: 100%;
+z-index: 2;
+filter: grayscale(20%) brightness(110%);
+transform: rotate(0deg);
+
+}
+
+.star {
+width: 525px;
+height: 478px;
+position: fixed;
+left: 1%;
+top: 5%;
+}
+
+.butterfly {
+
+position: fixed;
+right: 23%;
+top: 30%;
+width: 200px;
+height: 200px;
+
+}
+
+
+.navlinks {
+padding: 6%;
+display: block;
+position: absolute;
+top: 91px;
+left: 54px;
+color: #c4a7be;
+z-index: 1;
+width: 94%;
+height: 63.2%;
+font-family: 'DotGothic16';
+font-size: 22px;
+font-weight: 300;
+filter: grayscale(0%);
+backdrop-filter: opacity(40%);
+text-shadow: 1px 1px 3px #42203D;
+}
+
+.turn {
+animation-name: little;
+animation-duration: 1.1s;
+animation-iteration-count: infinite;
+animation-delay: 1.5s;
+display: inline;
+position: absolute;
+top: 3px;
+}
+
+.blinkie {
+position: absolute;
+top: 1%;
+left: 3%;
+filter: saturate(20%) brightness(120%);
+transform: rotate(-3.5deg);
+box-shadow: 0px 0px 30px lavender;
+}
+
+
+/*
+
+ABOUT ABOUT
+
+
+*/
+
+
+
+.byline {
+position: fixed;
+font-size: 66px;
+color: violet;
+font-family: "Neutronica";
+top: 3%;
+right: 9%;
+text-shadow: 1px 1px #834b7c;
+
+}
+
+.notes-leaflet {
+display: block;
+position: absolute;
+right: 0%;
+top: 70%;
+filter: grayscale(0%);
+opacity: 100%;
+transform: rotate(0deg);
+width: 100%;
+height: 40%;
+border-radius: 0px; 
+margin: auto; 
+border: 1px solid transparent; 
+cursor: url('./mats-cursor.cur'), auto;
+}
+
+
+/*
+
+LOADER LOADER LOADER
+
+
+*/
+
+.purple-loader {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  border:4px solid #0000;
+  border-radius: 50%;
+  border-color:#E4E4ED #0000;
+  animation: s6 1s infinite linear;
+position: absolute;
+top: 3%;
+left: 3%;
+}
+.purple-loader::before,
+.purple-loader::after {    
+  content:"";
+  grid-area: 1/1;
+  margin:2px;
+  border:inherit;
+  border-radius: 50%;
+}
+.purple-loader::before {
+  border-color:#42203D #0000;
+  animation:inherit; 
+  animation-duration: .5s;
+  animation-direction: reverse;
+}
+.purple-loader::after {
+  margin:8px;
+}
+
+@keyframes s6 { 
+  100%{transform: rotate(1turn)}
+}
+
+
+/*
+
+colors 
+
+cool lilacs: 
+rgb(223, 212, 240);
+rgb(199,177,196);
+
+from Anastasia: 
+
+warm dark purple: 
+#42203D;
+
+middle purple:
+#834b7c;
+
+deep dark purple:
+#190019
+
+deep pink:
+#c61459;
+
+lilac:
+#c4a7be
+
+cream: 
+#fef8f4
+
+filter: url("#purplefilter");
+
+box-shadow: 0px 0px 30px inset white;
+
+background-image: linear-gradient(whitesmoke, rgba(220, 220, 220, 0.5));
+
+floating nav: animation: float 3s ease-in-out infinite;
+
+*/

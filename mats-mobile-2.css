@@ -1,0 +1,222 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+
+ scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+html {
+height: 100%;
+overflow-y: hidden;
+cursor: url('./mats-cursor.cur');
+background-image: url('./mats-assets/lilac3.png');
+background-size: contain;
+background-color: lavender;
+overflow-y: scroll;
+}
+
+body {
+margin: 0 0;
+height: 100%;
+color: gainsboro;
+font-family: "Work Sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+text-align: left;
+cursor: url('./mats-cursor.cur'), auto;
+box-shadow: 0px 0px 30px inset lavender;
+backdrop-filter: blur(20px);
+}
+
+@font-face {
+    font-family: "Neutronica";
+    src: 
+      url("./Neutronica/NEG_____.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    
+
+}
+
+
+/*
+
+PAST EPISODES PAGE 
+*/
+
+.pastepisodes {
+backdrop-filter: blur(20px);
+
+
+}
+
+.pastep-leaflet {
+position: absolute;
+top: 40%;
+border: 1px solid #834b7c;
+padding: 1%;
+width: 95%;
+height: 50%;
+left: 2%;
+display: none;
+
+}
+
+
+#aboutstas-copy {
+width: 90%;
+word-wrap: break-word;
+font-size: 30px;
+color: #190019;
+}
+
+#pastep-copy {
+display: none;
+font-size: 30px;
+color: #190019;
+
+}
+
+.pe-backlink {
+display: block;
+position: absolute;
+top: 40%;
+background-color: thistle;
+color: #190019;
+border: 3px thistle outset;
+z-index: 5;
+width: 100%;
+text-align: right;
+text-decoration: none;
+}
+
+.testimonials {
+display: block;
+width: 100vw;
+height: 100%;
+position: absolute;
+padding: 1%;
+border-left: 1px solid;
+border-right: 1px solid;
+text-shadow: 0px 0px 5px white;
+background-color: rgba(230, 230, 250, 0.3);
+}
+
+/*
+
+ABOUT ABOUT
+
+
+*/
+
+
+
+.byline {
+position: fixed;
+font-size: 66px;
+color: violet;
+font-family: "Neutronica";
+top: 3%;
+right: 9%;
+text-shadow: 1px 1px #834b7c;
+
+}
+
+.notes-leaflet {
+display: block;
+position: absolute;
+right: 0%;
+top: 70%;
+filter: grayscale(0%);
+opacity: 100%;
+transform: rotate(0deg);
+width: 100%;
+height: 40%;
+border-radius: 0px; 
+margin: auto; 
+border: 1px solid transparent; 
+cursor: url('./mats-cursor.cur'), auto;
+}
+
+
+/*
+
+LOADER LOADER LOADER
+
+
+*/
+
+.purple-loader {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  border:4px solid #0000;
+  border-radius: 50%;
+  border-color:#E4E4ED #0000;
+  animation: s6 1s infinite linear;
+position: absolute;
+top: 3%;
+left: 3%;
+}
+.purple-loader::before,
+.purple-loader::after {    
+  content:"";
+  grid-area: 1/1;
+  margin:2px;
+  border:inherit;
+  border-radius: 50%;
+}
+.purple-loader::before {
+  border-color:#42203D #0000;
+  animation:inherit; 
+  animation-duration: .5s;
+  animation-direction: reverse;
+}
+.purple-loader::after {
+  margin:8px;
+}
+
+@keyframes s6 { 
+  100%{transform: rotate(1turn)}
+}
+
+
+/*
+
+colors 
+
+cool lilacs: 
+rgb(223, 212, 240);
+rgb(199,177,196);
+
+from Anastasia: 
+
+warm dark purple: 
+#42203D;
+
+middle purple:
+#834b7c;
+
+deep dark purple:
+#190019
+
+deep pink:
+#c61459;
+
+lilac:
+#c4a7be
+
+cream: 
+#fef8f4
+
+filter: url("#purplefilter");
+
+box-shadow: 0px 0px 30px inset white;
+
+background-image: linear-gradient(whitesmoke, rgba(220, 220, 220, 0.5));
+
+floating nav: animation: float 3s ease-in-out infinite;
+
+*/
